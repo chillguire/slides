@@ -10,7 +10,7 @@ If you wish to see the result, here's the [live demo](https://chillguire.github.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](https://github.com/chillguire/slides/blob/master/LICENSE).
 
 ## Acknowledgments
 
