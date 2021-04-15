@@ -1,4 +1,4 @@
-# Slides
+# Slides
 
 Presentation template made using [reveal.js](https://github.com/hakimel/reveal.js/) code with its raw functionality. Dependencies, pdf export among some other extra libraries were removed.
 
