@@ -1,0 +1,1597 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Defensa TEG</title>
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/blood.css" id="theme">
+	<link rel="stylesheet"
+		href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/an-old-hope.min.css">
+</head>
+
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+
+			<!-- portada -->
+			<section>
+				<h1 style="font-size: 1.5em; text-shadow: 0 2.5px 0 #c5c5c5;">APLICACIÓN WEB PARA LA GESTIÓN ACADÉMICA A
+					DISTANCIA EN INSTITUCIONES
+					EDUCATIVAS</h1>
+				<div>
+					<p style=" text-align: right; margin-bottom: -4%; font-size: .75em;">
+						<small><b>Autor</b></small>
+					</p>
+					<p style=" text-align: right; margin-bottom: -4.5%;">
+						<small>Ricardo E. Avendaño T.</small>
+					</p>
+					<p style=" text-align: right; margin-bottom: -3.5%;">
+						<small><em>ricardoavendanoet@gmail.com</em></small>
+					</p>
+					<p style=" text-align: right; margin-bottom: -4%; font-size: .75em;">
+						<small><b>Tutor</b></small>
+					</p>
+					<p style=" text-align: right;"><small>
+							Ing. Danny J. Zambrano M.
+						</small></p>
+				</div>
+			</section>
+			<!-- /portada -->
+
+			<!-- intro -->
+			<section>
+				<h4 style="color: #f67280;">Introducción &plus; Situación actual</h4>
+			</section>
+
+			<section>
+				<section>
+					<blockquote>4.660 millones de personas alrededor del mundo son usuarios
+						activos de Internet <sup style="font-size:0.4em;">[1]</sup></blockquote>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li>Incremento de campos apoyados por
+							tecnología,
+							como el paradigma educativo. <sup style="font-size:0.4em;">[2]</sup></li>
+					</ul>
+
+					<div>
+						<img width="15%" class="plain" src="img/growth.png">
+						<img width="15%" class="plain" src="img/online-education.png">
+						<div style="font-size: 0.4em; opacity: 0.5;">Imágenes:
+							Flaticon.com.</div>
+					</div>
+
+					<ol
+						style="margin-top: 2%;list-style: none;font-size: 0.4em; text-align: justify; display: block; opacity: 0.5;">
+						<li>[1] Statista. (2021). Worldwide digital population as of October 2020.</li>
+						<li>[2] Lee, K. R. (2002). Impacts of Information Technology on Society in the new Century.</li>
+					</ol>
+				</section>
+
+				<section>
+					<h5>Debido a sus ventajas...<sup><small
+								style="margin-left: 2.5%;background-color:#f67280; padding: .25%; border-radius: .25rem;">Y
+								al
+								covid-19</small></sup>
+					</h5>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li style="margin-bottom: 2%;">Eliminación de limitaciones de tiempo y espacio.</li>
+						<li style="margin-bottom: 2%;">Instituciones incorporan en sus operaciones
+							herramientas de tecnología
+							educativa, a distancia y en línea.</li>
+						<li>Especialmente, los LMSs. <sup style="font-size:0.4em;">[1]</sup></li>
+					</ul>
+
+					<div>
+						<img width="15%" src="img/transformation.png">
+						<img width="15%" src="img/audio-course.png">
+						<div style="font-size: 0.4em; opacity: 0.5;">Imágenes:
+							Flaticon.com.</div>
+					</div>
+
+					<ol
+						style="margin-top: 2%;list-style: none;font-size: 0.4em; text-align: justify; display: block; opacity: 0.5;">
+						<li>[1] Raza, S. A., Qazi, W., Khan, K. A., & Salam, J. (2020). Social Isolation and Acceptance
+							of the Learning Management System
+							(LMS) in the time of COVID-19 Pandemic: An Expansion of the UTAUT Model.</li>
+
+					</ol>
+				</section>
+
+				<section>
+					<h5>No obstante...</h5>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li style="margin-bottom: 2%;">Instituciones no preparadas. <sup
+								style="font-size:0.4em;">[1]</sup></li>
+						<li style="margin-bottom: 2%;">Adopción improvisada.</li>
+						<li style="margin-bottom: 2%;"> No cumplen su función de manera adecuada.</li>
+						<li>Por recursos económicos, de tiempo, administrativos, de espacio o
+							técnicos. <small style="vertical-align: middle;">(más sobre esto posteriormente)</small>
+						</li>
+					</ul>
+
+					<div>
+						<img width="15%" src="img/dislike.png">
+						<img width="15%" src="img/fast-time.png">
+						<div style="font-size: 0.4em; opacity: 0.5;">Imágenes:
+							Flaticon.com.</div>
+					</div>
+
+					<ol
+						style="margin-top: 2%;list-style: none;font-size: 0.4em; text-align: justify; display: block; opacity: 0.5;">
+						<li>[1] Di Pietro, G., Biagi, F., Costa, P., Karpiński, Z., & Mazza, J. (2020). The likely
+							impact
+							of COVID-19 on education:
+							Reflections based on the existing literature and recent international datasets.</li>
+
+					</ol>
+				</section>
+
+				<section>
+					<h5>Por otro lado, los servicios web</h5>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li style="margin-bottom: 2%;">Crecimiento acelerado de Internet.</li>
+						<li style="margin-bottom: 2%;">Necesidad de interoperabilidad de aplicaciones.</li>
+						<li style="margin-bottom: 2%;">Transferencia de Estado Representacional (REST).</li>
+						<li>Estándar de transporte y codificación de datos.</li>
+					</ul>
+
+					<div>
+						<img width="15%" src="img/cloud-computing.png">
+						<div style="font-size: 0.4em; opacity: 0.5;">Imagen:
+							Flaticon.com.</div>
+					</div>
+				</section>
+
+				<section>
+					<h5>Por esta razón el presente TEG se basó en...
+					</h5>
+					<ul>
+						<li>Desarrollo de una aplicación web.</li>
+						<li>Bajo REST.</li>
+						<li>Gestión académica a
+							distancia.</li>
+						<li>Código accesible (OSS)</li>
+						<li>Despliegue simple (PaaS)</li>
+					</ul>
+					<h6 style="margin-top: 2%;">(más sobre esto posteriormente)</h6>
+				</section>
+			</section>
+			<!-- /intro -->
+
+			<!-- cap. I -->
+			<section>
+				<h1 style="color: #c06c84;">Capítulo I</h1>
+				<h2>Diagnóstico</h2>
+			</section>
+			<!-- planteamiento -->
+			<section>
+				<section>
+					<h4 style="color: #c06c84;">Planteamiento</h4>
+				</section>
+
+				<section>
+					<h5>Síntomas y causas</h5>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li style="margin-bottom: 2%;">Incapacidad de adoptar soluciones de software propietario.</li>
+						<li style="margin-bottom: 2%;">Incapacidad de implementar soluciones de software libre o código
+							abierto.</li>
+						<li>Incapacidad de adoptar un sistema educativo a distancia (inversión y configuración de
+							equipos). <sup><small
+									style="background-color:#c06c84; padding: .25%; border-radius: .25rem;">Las
+									soluciones propietarias suelen utilizar una arquitectura SaaS</small></sup></li>
+					</ul>
+
+					<div>
+						<img width="15%" src="img/recession.png">
+						<img width="15%" src="img/server.png">
+						<img width="15%" src="img/failure.png">
+						<div style="font-size: 0.4em; opacity: 0.5;">Imágenes:
+							Flaticon.com.</div>
+					</div>
+				</section>
+
+				<section>
+					<h5>Pronóstico</h5>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li style="margin-bottom: 2%;">El aprendizaje sufre un retraso.</li>
+						<li style="margin-bottom: 2%;">La economía se ve afectada. <sup
+								style="font-size:0.4em;">[1]</sup></li>
+						<li>Mayor desigualdad a futuro con respecto a instituciones que sean
+							capaces de mitigar los efectos del virus adecuadamente.</li>
+					</ul>
+
+					<div>
+						<img width="15%" src="img/bulb.png">
+						<img width="15%" src="img/recession.png">
+						<img width="15%" src="img/inequality.png">
+						<div style="font-size: 0.4em; opacity: 0.5;">Imágenes:
+							Flaticon.com.</div>
+					</div>
+
+					<ol
+						style="margin-top: 2%;list-style: none;font-size: 0.4em; text-align: justify; display: block; opacity: 0.5;">
+						<li>[1] Hanushek, E., & Woessmann, L. (2020). The economic impacts of learning losses.</li>
+
+					</ol>
+				</section>
+
+				<section>
+					<h5>Propuesta</h5>
+					<h6>(más sobre esto posteriormente)</h6>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li style="margin-bottom: 2%;">Solución de software ‘intermedia’.</li>
+						<li style="margin-bottom: 2%;">Usabilidad simple — despliegue veloz — conocimientos técnicos y
+							costos
+							reducidos.</li>
+						<li style="margin-bottom: 2%;">Posibilidad de escalado horizontal.</li>
+						<li>MongoDB &plus; Express &plus; Node.js &plus;
+							Bootstrap &plus; WebRTC &plus; Socket.IO &plus;
+							Heroku</li>
+					</ul>
+
+					<div>
+						<img width="15%" src="img/app-design.png">
+						<img width="15%" src="img/easy-to-use.png">
+						<div style="font-size: 0.4em; opacity: 0.5;">Imágenes:
+							Flaticon.com.</div>
+					</div>
+
+				</section>
+
+				<section>
+					<h5>Justificación</h5>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li style="margin-bottom: 2%;">Fortalece la comunicación entre los entes presentes en la
+							educación.</li>
+						<li style="margin-bottom: 2%;">Otras soluciones no siempre se ajustan
+							a las necesidades.</li>
+						<li style="margin-bottom: 2%;">Curva de aprendizaje leve.</li>
+						<li style="margin-bottom: 2%;">Tecnologías modernas que facilitan su mantenimiento y
+							actualización.</li>
+						<li>Sistema de cómoda instalación, configuración y ejecución.</li>
+					</ul>
+
+					<div>
+						<img width="15%" src="img/curve.png">
+						<img width="15%" src="img/futuristic.png">
+						<div style="font-size: 0.4em; opacity: 0.5;">Imágenes:
+							Flaticon.com.</div>
+					</div>
+				</section>
+			</section>
+			<!-- /planteamiento -->
+			<!-- sistemas actuales y antecedentes -->
+			<section>
+				<section>
+					<h4 style="color: #c06c84;">Situación actual</h4>
+				</section>
+
+				<section>
+					<h5>Descripción</h5>
+					<h6 style="margin-top: 2%; color: #c06c84;">Sistemas diseñados improvisadamente</h6>
+					<ul style="font-size: 0.75em; text-align: justify; width: 60%;">
+						<li style="margin-bottom: 2%;">Software no especializado.</li>
+						<li style="margin-bottom: 2%;">Variedad de aplicaciones sin relación.<sup><small
+									style="background-color:#c06c84; padding: .25%; border-radius: .25rem;"><i
+										class="lab la-whatsapp"></i><i class="lab la-skype"></i><i
+										class="lab la-slideshare"></i><i class="lab la-slack"></i></small></sup>
+						</li>
+						</li>
+						<li>Control ineficiente.</li>
+					</ul>
+
+					<div>
+						<img width="15%" src="img/venn-diagram.png">
+						<img width="15%" src="img/data-loss.png">
+						<div style="font-size: 0.4em; opacity: 0.5;">Imágenes:
+							Flaticon.com.</div>
+					</div>
+				</section>
+
+				<section>
+					<h5>Entidades</h5>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li style="margin-bottom: 2%;">Institución — Administrador.</li>
+						<li style="margin-bottom: 2%;">Profesor.</li>
+						<li>Estudiante.</li>
+					</ul>
+
+					<div>
+						<img width="15%" src="img/school.png">
+						<img width="15%" src="img/teacher.png">
+						<img width="15%" src="img/graduated.png">
+						<div style="font-size: 0.4em; opacity: 0.5;">Imágenes:
+							Flaticon.com.</div>
+					</div>
+				</section>
+
+				<section>
+					<h5>Procesos</h5>
+					<ul style="font-size: 0.75em; text-align: justify; width: 60%;">
+						<li style="margin-bottom: 2%;">Oferta de cursos.</li>
+						<li style="margin-bottom: 2%;">Instrucción de clases.</li>
+						<li style="margin-bottom: 2%;">Envío de archivos/lecciones.</li>
+						<li style="margin-bottom: 2%;">Medios de comunicación sincrónicos.</li>
+						<li>Control de información de cursos. <sup><small
+									style="background-color:#c06c84; padding: .25%; border-radius: .25rem;">No
+									automatizado</small></sup>
+						</li>
+					</ul>
+
+					<div>
+						<img width="15%" src="img/comments.png">
+						<img width="15%" src="img/idea.png">
+						<img width="15%" src="img/videoconference.png">
+						<img width="15%" src="img/tasks.png">
+						<div style="font-size: 0.4em; opacity: 0.5;">Imágenes:
+							Flaticon.com.</div>
+					</div>
+				</section>
+			</section>
+			<!-- /sistemas actuales y antecedentes -->
+			<!-- /cap. I -->
+
+			<!-- cap. II -->
+			<section>
+				<h1 style="color: #6c5b7b;">Capítulo II</h1>
+				<h2>Requerimientos</h2>
+			</section>
+			<!-- situacional -->
+			<section>
+				<section>
+					<h4 style="color: #6c5b7b;">Análisis situacional</h4>
+				</section>
+
+				<section>
+					<h6>FODA</h6>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li>Estudiantes</li>
+						<ul style="font-size: 0.6em;">
+							<li>Jóvenes habituados a la tecnología.</li>
+							<li>Solución ajustada.</li>
+							<li>Fallos en sistemas diseñados.</li>
+							<li>Problemas logísticos sobre cursos.</li>
+						</ul>
+						<li>Profesores</li>
+						<ul style="font-size: 0.6em;">
+							<li>Comunicación por medios no formales.</li>
+							<li>Medio directo para compartir conocimientos.</li>
+							<li>Desconocimiento de herramientas tecnológicas.</li>
+							<li>Incertidumbre de cursos asignados.</li>
+						</ul>
+						<li>Instituciones</li>
+						<ul style="font-size: 0.6em;">
+							<li>Datos fácilmente modelables en ambiente web.</li>
+							<li>Alta adopción de educación a distancia. <sup><small
+										style="background-color:#f67280; padding: .25%; border-radius: .25rem;">Covid-19</small></sup>
+							</li>
+							<li>Ineficiencia en la actualización de cursos ofertados.</li>
+							<li>Usuarios foráneos acceden a información.</li>
+						</ul>
+					</ul>
+				</section>
+			</section>
+			<!-- /situacional -->
+			<!-- documental -->
+			<section>
+				<section>
+					<h4 style="color: #6c5b7b;">Análisis documental</h4>
+				</section>
+
+				<section>
+					<h4 style="color:#6c5b7b">Scrum</h4>
+					<h6>Artefactos de Scrum</h6>
+					<ul style="font-size: 0.75em; text-align: justify; width: 60%;">
+						<li style="margin-bottom: 2%;">Product Backlog.</li>
+						<li style="margin-bottom: 2%;">Historias de usuario.</li>
+					</ul>
+				</section>
+
+				<section>
+					<table style="font-size: 0.4em;border: 1px solid;float: left;">
+						<thead>
+							<tr>
+							<tr>
+								<th style="text-align: center;" colspan=" 4">Product Backlog</th>
+							</tr>
+							<th style="border: 1px solid;">Código</th>
+							<th style="border: 1px solid;">Historia de usuario</th>
+							<th style="border: 1px solid;">Prioridad</th>
+							<th style="border: 1px solid;">Estimación</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style="border: 1px solid;">HU01</td>
+								<td style="border: 1px solid;">Registro en la plataforma</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">20</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU02</td>
+								<td style="border: 1px solid;">Modificación de perfil</td>
+								<td style="border: 1px solid;">Baja</td>
+								<td style="border: 1px solid;">5</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU03</td>
+								<td style="border: 1px solid;">Ingreso a la plataforma</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">5</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU04</td>
+								<td style="border: 1px solid;">Restablecimiento de contraseña</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">10</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU05</td>
+								<td style="border: 1px solid;">Cerrar sesión</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">5</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU06</td>
+								<td style="border: 1px solid;">Agregar cursos</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">10</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU07</td>
+								<td style="border: 1px solid;">Modificar cursos</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">10</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU08</td>
+								<td style="border: 1px solid;">Eliminar cursos</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">5</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU09</td>
+								<td style="border: 1px solid;">Asignar cursos</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">20</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU10</td>
+								<td style="border: 1px solid;">Inscribir en cursos</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">20</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU11</td>
+								<td style="border: 1px solid;">Lista de cursos</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">5</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU12</td>
+								<td style="border: 1px solid;">Consulta de cursos</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">5</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU13</td>
+								<td style="border: 1px solid;">Lista de cursos asignados</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">10</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU14</td>
+								<td style="border: 1px solid;">Lista de cursos inscritos</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">10</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU15</td>
+								<td style="border: 1px solid;">Lista de usuarios en curso</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">10</td>
+							</tr>
+						</tbody>
+					</table>
+					<table
+						style="font-size: 0.4em;border: 1px solid; display: inline-table;float: left;position: relative;top: 3.5rem; margin-left: 2.5%;">
+						<tbody>
+							<tr>
+								<td style="border: 1px solid;">HU16</td>
+								<td style="border: 1px solid;">Agregar lección</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">10</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU17</td>
+								<td style="border: 1px solid;">Modificar lección</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">10</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU18</td>
+								<td style="border: 1px solid;">Eliminar lección</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">5</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU19</td>
+								<td style="border: 1px solid;">Lista de lecciones</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">5</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU20</td>
+								<td style="border: 1px solid;">Consultar lección</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">5</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU21</td>
+								<td style="border: 1px solid;">Participar en videoconferencia</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">40</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU22</td>
+								<td style="border: 1px solid;">Enviar mensajes</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">40</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU23</td>
+								<td style="border: 1px solid;">Crear usuario</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">20</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU24</td>
+								<td style="border: 1px solid;">Asignar rol de usuario</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">10</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU25</td>
+								<td style="border: 1px solid;">Desactivar usuario</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">5</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU26</td>
+								<td style="border: 1px solid;">Lista de usuarios</td>
+								<td style="border: 1px solid;">Alta</td>
+								<td style="border: 1px solid;">5</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU27</td>
+								<td style="border: 1px solid;">Perfiles de usuario</td>
+								<td style="border: 1px solid;">Baja</td>
+								<td style="border: 1px solid;">20</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<table style="font-size: 0.5em;border: 1px solid;">
+						<tr style="border: 1px solid;">
+							<td style="border: 1px solid;"><b>Historia de usuario</b></td>
+							<td style="border: 1px solid;">HU01</td>
+						</tr>
+						<tr>
+							<td colspan="2"><b>Título:</b> Registro en plataforma.</td>
+						</tr>
+						<tr>
+							<td colspan="2"><b>Descripción:</b> Como usuario (estudiante, profesor o administrador)
+								quiero registrarme en la aplicación para
+								poder realizar mis actividades dentro de la
+								plataforma.</td>
+						</tr>
+						<tr style="border: 1px solid;">
+							<td style="border: 1px solid;"><b>Prioridad:</b> Alta.</td>
+							<td style="border: 1px solid;"><b>Esfuerzo:</b> 20.</td>
+						</tr>
+						<tr>
+							<td colspan="2"><b>Conversación:</b> Consta de una interfaz gráfica que permite ingresar
+								los siguientes campos: nombre, apellido, correo electrónico y
+								contraseña, para registrarse en la plataforma.</td>
+						</tr>
+						<tr>
+							<td colspan="2"><b>Criterios de aceptación:</b>
+								<br>
+								<ol style="margin-left: 5%;">
+									<li><b>Resultado exitoso</b></li>
+									<ul>
+										<li>Cuando el usuario llene los datos solicitados y requeridos: Nombre,
+											Apellido,
+											E-mail y contraseña.</li>
+										<li>Entonces se creará el
+											usuario en el sistema.</li>
+										<li>Y en la siguiente pantalla se mostrará el mensaje: ‘Usuario registrado con
+											éxito’.</li>
+									</ul>
+									<li><b>Resultado fallido</b></li>
+									<ul>
+										<li>Dado que no se ingrese alguno de los datos requeridos:</li>
+										<ul>
+											<li>Cuando el usuario haga click en 'Registrar'.</li>
+											<li>No se crea el usuario en el sistema.</li>
+											<li>Aparece el mensaje 'Ingrese los campos requeridos faltantes'.</li>
+										</ul>
+										<li>Dado si el correo ya existe en la base de datos:</li>
+										<ul>
+											<li>Cuando el usuario haga click en 'Registrar'.</li>
+											<li>No se crea el usuario en el sistema.</li>
+											<li>Aparece el mensaje 'Correo ya registrado'.</li>
+										</ul>
+									</ul>
+								</ol>
+							</td>
+						</tr>
+					</table>
+				</section>
+			</section>
+			<!-- /documental -->
+			<!-- /cap. II -->
+
+			<!-- cap. III -->
+			<section>
+				<h1 style="color: #355c7d;">Capítulo III</h1>
+				<h2>Diseño</h2>
+			</section>
+
+			<section>
+				<section>
+					<h4 style="color: #355c7d;">Solución propuesta</h4>
+				</section>
+
+				<section>
+					<h5>Alcance</h5>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li style="margin-bottom: 2%;">Una aplicación web.</li>
+						<li style="margin-bottom: 2%;">Institutos de cualquier nivel académico.</li>
+						<li>Facilitar adopción inicial de la educación a distancia.</li>
+					</ul>
+
+					<div>
+						<img width="15%" src="img/computer.png">
+						<img width="15%" src="img/school.png">
+						<img width="15%" src="img/online-education.png">
+						<div style="font-size: 0.4em; opacity: 0.5;">Imágenes:
+							Flaticon.com.</div>
+					</div>
+				</section>
+
+				<section data-background-color="#f1f1f1">
+					<h5 style="color: #242424;">Arquitectura</h5>
+					<img width="80%" style="border: none; box-shadow: none;" src="img/arquitecturaSistema.png">
+				</section>
+
+				<section>
+					<h5>Entidades</h5>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li style="margin-bottom: 2%;">Institución — Administrador.</li>
+						<li style="margin-bottom: 2%;">Profesor.</li>
+						<li>Estudiante.</li>
+					</ul>
+
+					<div>
+						<img width="15%" src="img/school.png">
+						<img width="15%" src="img/teacher.png">
+						<img width="15%" src="img/graduated.png">
+						<div style="font-size: 0.4em; opacity: 0.5;">Imágenes:
+							Flaticon.com.</div>
+					</div>
+				</section>
+
+				<section>
+					<h5>Procesos</h5>
+					<ul style="font-size: 0.75em; text-align: justify; width: 60%;">
+						<li style="margin-bottom: 2%;">CRUD cursos.</li>
+						<li style="margin-bottom: 2%;">Medios de comunicación en tiempo real (chat y videoconferencias).
+						</li>
+						<li style="margin-bottom: 2%;">CRUD lecciones. <sup><small
+									style="background-color:#355c7d; padding: .25%; border-radius: .25rem;">Con soporte
+									de Markdown</small></sup></li>
+						<li style="margin-bottom: 2%;">Control de asignación e inscripción.</li>
+						<li>Autenticación.</li>
+					</ul>
+
+					<div>
+						<img width="15%" src="img/networking.png">
+						<img width="15%" src="img/live.png">
+						<img width="15%" src="img/analytics.png">
+						<img width="15%" src="img/account.png">
+						<div style="font-size: 0.4em; opacity: 0.5;">Imágenes:
+							Flaticon.com.</div>
+					</div>
+				</section>
+
+				<section>
+					<h5>Administración de datos</h5>
+					<pre>
+<code class="javascript">
+/* Cursos */
+const courseSchema = new Schema({
+	name: {
+		type: String,
+		required: true,
+	},
+	description: {
+		type: String,
+		required: true,
+	},
+	createdAt: {
+		type: Date,
+		default: Date.now,
+	},
+	roomID: {
+		type: String,
+		required: true,
+		unique: true,
+	},
+	lessons: [
+		{
+		type: Schema.Types.ObjectId,
+		ref: 'Lesson',
+		}
+	],
+	instructor: {
+		type: Schema.Types.ObjectId,
+		ref: 'User',
+	},
+	students: [
+		{
+		type: Schema.Types.ObjectId,
+		ref: 'User',
+		}
+	],
+});
+
+/* Lecciones */
+const lessonSchema = new Schema({
+	name: {
+		type: String,
+		required: true,
+	},
+	OGdescription: {
+		type: String,
+		required: true,
+	},
+	descriptionMD: {
+		type: String,
+		required: true,
+	},
+	sanitizedDescription: {
+		type: String,
+		required: true,
+	},
+	createdAt: {
+		type: Date,
+		default: Date.now,
+	},
+	course: {
+		type: Schema.Types.ObjectId,
+		ref: 'Course',
+		required: true,
+	},
+	instructor: {
+		type: Schema.Types.ObjectId,
+		ref: 'User',
+		required: true,
+	},
+});
+
+/* Usuarios */
+const userSchema = new Schema({
+	firstName: {
+		type: String,
+		required: true,
+	},
+	lastName: {
+		type: String,
+		required: true,
+	},
+	username: {
+		type: String,
+		required: true,
+		unique: true,
+	},
+	email: {
+		type: String,
+		required: true,
+		unique: true,
+	},
+	type: {
+		type: String,
+		enum: ['Admin', 'Instructor', 'Student'],
+		default: 'Student',
+	},
+	password: {
+		type: String,
+		required: true,
+		select: false,
+	},
+	resetPasswordURL: {
+		type: String,
+		unique: true,
+		sparse: true,
+	},
+	resetPasswordExpires: {
+		type: Date,
+	},
+});
+
+/* Usuarios invitados */
+const invitedUserSchema = new Schema({
+	email: {
+		type: String,
+		required: true,
+		unique: true,
+	},
+	type: {
+		type: String,
+		enum: ['Admin', 'Instructor', 'Student'],
+		default: 'Student',
+	},
+});
+
+/* Chat */
+const ChatSchema = new Schema({
+	author: {
+		type: Schema.Types.ObjectId,
+		ref: 'User',
+	},
+	content: String,
+	createdAt: {
+		type: Date,
+		default: Date.now
+	}
+});
+</code>
+</pre>
+				</section>
+
+				<section>
+					<h5>Metodología y pruebas</h5>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li style="margin-bottom: 2%;">Sprint 1: Bases.
+						</li>
+						<li style="margin-bottom: 2%;">Sprint 2: Relaciones y acceso.
+						</li>
+						<li style="margin-bottom: 2%;">Sprint 3: Funciones de usuarios y chat.
+						</li>
+						<li style="margin-bottom: 2%;">Sprint 4: Administración y detalles.
+						</li>
+						<li>Criterios de aceptación.
+						</li>
+					</ul>
+
+					<div>
+						<img width="15%" src="img/scrum.png">
+						<img width="15%" src="img/ab-testing.png">
+						<img width="15%" src="img/feedback.png">
+						<div style="font-size: 0.4em; opacity: 0.5;">Imágenes:
+							Flaticon.com.</div>
+					</div>
+				</section>
+
+				<section>
+					<table style="font-size: 0.75em;">
+						<thead>
+							<tr>
+								<th>Sprint 1</th>
+								<th>Sprint 2</th>
+								<th>Sprint 3</th>
+								<th>Sprint 4</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>HU01</td>
+								<td>HU16</td>
+								<td>HU23</td>
+								<td>HU25</td>
+							</tr>
+							<tr>
+								<td>HU03</td>
+								<td>HU17</td>
+								<td>HU24</td>
+								<td>HU26</td>
+							</tr>
+							<tr>
+								<td>HU05</td>
+								<td>HU18</td>
+								<td>HU02</td>
+								<td>HU27</td>
+							</tr>
+							<tr>
+								<td>HU06</td>
+								<td>HU19</td>
+								<td>HU04</td>
+								<td>HU28</td>
+							</tr>
+							<tr>
+								<td>HU07</td>
+								<td>HU20</td>
+								<td>HU22</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>HU08</td>
+								<td>HU09</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>HU11</td>
+								<td>HU10</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>HU12</td>
+								<td>HU13</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>HU21</td>
+								<td>HU14</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>HU15</td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<table style="font-size: 0.5em;border: 1px solid;">
+						<thead>
+							<tr>
+								<th style="border: 1px solid;">Historia de usuario</th>
+								<th style="border: 1px solid;">Criterio de aceptación</th>
+								<th style="border: 1px solid;">¿Cumple?</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="3" style="border: 1px solid;">HU01</td>
+								<td style="border: 1px solid;">Resultado exitoso - Usuario registrado</td>
+								<td style="border: 1px solid;">true</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">Resultado fallido – Dato requerido no ingresado</td>
+								<td style="border: 1px solid;">true</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">Resultado fallido – Correo ya registrado</td>
+								<td style="border: 1px solid;">true</td>
+							</tr>
+
+							<tr>
+								<td rowspan="3" style="border: 1px solid;">HU03</td>
+								<td style="border: 1px solid;">Resultado exitoso – Usuario ingresa al sistema</td>
+								<td style="border: 1px solid;">true</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">Resultado fallido – Credenciales incorrectas</td>
+								<td style="border: 1px solid;">true</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">Resultado fallido – Sesión expirada</td>
+								<td style="border: 1px solid;">true</td>
+							</tr>
+
+							<tr>
+								<td style="border: 1px solid;">HU05</td>
+								<td style="border: 1px solid;">Resultado exitoso – Usuario sale del sistema</td>
+								<td style="border: 1px solid;">true</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU06</td>
+								<td style="border: 1px solid;">Resultado exitoso – Usuario agrega curso</td>
+								<td style="border: 1px solid;">true</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU07</td>
+								<td style="border: 1px solid;">Resultado exitoso – Usuario modifica curso</td>
+								<td style="border: 1px solid;">true</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU08</td>
+								<td style="border: 1px solid;">Resultado exitoso – Usuario elimina curso</td>
+								<td style="border: 1px solid;">true</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU11</td>
+								<td style="border: 1px solid;">Resultado exitoso – Usuario ve cursos</td>
+								<td style="border: 1px solid;">true</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">HU12</td>
+								<td style="border: 1px solid;">Resultado exitoso – Usuario ve curso</td>
+								<td style="border: 1px solid;">true</td>
+							</tr>
+
+							<tr>
+								<td rowspan="2" style="border: 1px solid;">HU21</td>
+								<td style="border: 1px solid;">Resultado exitoso – Usuario participa en la sala</td>
+								<td style="border: 1px solid;">true</td>
+							</tr>
+							<tr>
+								<td style="border: 1px solid;">Resultado fallido – Usuario no es capaz de participar en
+									la sala</td>
+								<td style="border: 1px solid;">true</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section data-background-color="#28282d">
+					<h2><a style="color:#355c7d;" href="https://vast-meadow-14555.herokuapp.com"
+							target="_blank">Solución propuesta
+							&#x2197;</a>
+					</h2>
+				</section>
+			</section>
+			<!-- /cap. III -->
+
+			<!-- cap. IV -->
+			<section>
+				<h1 style="color: #ffaa00;">Capítulo IV</h1>
+				<h2>Análisis económico</h2>
+			</section>
+			<!-- mercado -->
+			<section>
+				<section>
+					<h4 style="color: #ffaa00;">Estudio de mercado</h4>
+				</section>
+
+				<section>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li>Software propietario.</li>
+						<ul style="margin-bottom: 2%;">
+							<li>Brightspace</li>
+							<li>Blackboard</li>
+						</ul>
+						<li>Software de código abierto/libre.</li>
+						<ul>
+							<li>Canvas</li>
+							<li>Moodle</li>
+						</ul>
+					</ul>
+
+					<div>
+						<div style="display: inline-block;">
+							<img width="70%" src="img/a.png">
+							<div style="font-size: 0.4em; opacity: 0.5;">Imagen:
+								edutechnica (2020).</div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div>
+						<img width="100%" src="img/a2.png">
+						<div style="font-size: 0.4em; opacity: 0.5;">Imagen:
+							edutechnica (2020).</div>
+					</div>
+				</section>
+
+				<section>
+					<img width="75%" src="img/a3.png">
+					<div style="font-size: 0.4em; opacity: 0.5;">Imagen:
+						e-Literate (2017).</div>
+				</section>
+
+				<section>
+					<table style="font-size: 0.5em;">
+						<thead>
+							<tr>
+								<th>LMS</th>
+								<th>Servidor</th>
+								<th>DBMS</th>
+								<th>Última versión</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>aTutor</td>
+								<td>PHP</td>
+								<td>MySQL, PostgreSQL</td>
+								<td>2.2.4 (2018)</td>
+							</tr>
+							<tr>
+								<td>Canvas</td>
+								<td>Ruby</td>
+								<td>PostgreSQL, SQLite</td>
+								<td>2020-12-16.47 (2020)</td>
+							</tr>
+							<tr>
+								<td>Chamilo</td>
+								<td>PHP</td>
+								<td>MySQL</td>
+								<td>1.11.14 (2020)</td>
+							</tr>
+							<tr>
+								<td>Claroline</td>
+								<td>PHP</td>
+								<td>MySQL</td>
+								<td>12.5 (2019)</td>
+							</tr>
+							<tr>
+								<td>DoceboLMS</td>
+								<td>PHP</td>
+								<td>MySQL</td>
+								<td>7.5 (2018)</td>
+							</tr>
+							<tr>
+								<td>eFront</td>
+								<td>PHP</td>
+								<td>MySQL</td>
+								<td>3.6.15.5 (2015)</td>
+							</tr>
+							<tr>
+								<td>ILIAS</td>
+								<td>PHP</td>
+								<td>MySQL</td>
+								<td>6.7 (2021)</td>
+							</tr>
+							<tr>
+								<td>LAMS</td>
+								<td>Java</td>
+								<td>MySQL</td>
+								<td>4.0 (2019)</td>
+							</tr>
+							<tr>
+								<td>LON-CAPA</td>
+								<td>Perl</td>
+								<td>MySQL</td>
+								<td>2.11.2 (2017)</td>
+							</tr>
+							<tr>
+								<td>Mahara</td>
+								<td>PHP</td>
+								<td>MySQL, PostgreSQL</td>
+								<td>20.04.2 (2020)</td>
+							</tr>
+							<tr>
+								<td>Moodle</td>
+								<td>PHP</td>
+								<td>MySQL</td>
+								<td>3.10.1 (2021)</td>
+							</tr>
+							<tr>
+								<td>OpenOLAT</td>
+								<td>Java</td>
+								<td>MySQL, PostgreSQL</td>
+								<td>15.2.2 (2020)</td>
+							</tr>
+							<tr>
+								<td>Sakai</td>
+								<td>Java</td>
+								<td>Oracle, MySQL</td>
+								<td>20.0 (2020)</td>
+							</tr>
+							<tr>
+								<td>SWAD</td>
+								<td>C, C++</td>
+								<td>MySQL</td>
+								<td>19.76.6 (2019)</td>
+							</tr>
+							<tr>
+								<td>WeBWorK</td>
+								<td>Perl</td>
+								<td>MySQL</td>
+								<td>2.14 (2018)</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section>
+					<table style="font-size: 0.75em;">
+						<thead>
+							<tr>
+								<th>Software</th>
+								<th>Características</th>
+								<th>Precio (USD)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Blackboard</td>
+								<td>Software propietario, soporte técnico y soluciones ajustadas.</td>
+								<td>$160 000/año</td>
+							</tr>
+							<tr>
+								<td>Canvas</td>
+								<td>Código abierto parcial.</td>
+								<td>$50 000/año</td>
+							</tr>
+							<tr>
+								<td>Moodle</td>
+								<td>Código abierto con soluciones de pago.</td>
+								<td>$150 - $2000/año</td>
+							</tr>
+							<tr>
+								<td style="color:#ffaa00">Propuesta</td>
+								<td>Código abierto, arquitectura en la nube, despliegue simple.</td>
+								<td>$0 - $300/año</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</section>
+			<!-- /mercado -->
+			<!-- inversión -->
+			<section>
+				<section>
+					<h4 style="color: #ffaa00;">Inversión inicial</h4>
+				</section>
+
+				<section>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li style="margin-bottom: 2%; width: 110%;">Costos ligados a proveedores de servicios en la
+							nube.
+							<sup
+								style="font-size: 0.6em;background-color:#f67280; padding: .25%; border-radius: .25rem;">Heroku</sup>
+						</li>
+						<li style="margin-bottom: 2%;">Plan gratuito.</li>
+						<ul>
+							<li>550 a 1000 horas.</li>
+							<li>$0.</li>
+						</ul>
+						<li>Plan estándar.</li>
+						<ul>
+							<li>Sin límite.</li>
+							<li>$25.</li>
+						</ul>
+					</ul>
+				</section>
+			</section>
+			<!-- /inversión -->
+			<!-- costos -->
+			<section>
+				<section>
+					<h4 style="color: #ffaa00;">Costo de desarrollo</h4>
+				</section>
+
+				<section>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li style="margin-bottom: 2%;">Planes gratuitos. <span style="color: cadetblue;">&plus;</span>
+						</li>
+						<li style="margin-bottom: 2%;">Dispositivos personales. <span
+								style="color: cadetblue;">&plus;</span></li>
+						<li style="margin-bottom: 2%;">Paquetes de código abierto. <span
+								style="color: cadetblue;">&plus;</span></li>
+						<li>Equipo de desarrollo. <span style="color: #a23;">&minus;</span>
+						</li>
+						<ul>
+							<li style="margin-bottom: 2%;">4 Sprints &#8594; 1 semana c/u (7 días) &#8594; 7 horas de
+								trabajo cada
+								día </li>
+						</ul>
+					</ul>
+					<div>
+						<table style="font-size: 0.75em; border-bottom: 1px solid;margin-bottom: 5%;">
+							<thead>
+								<tr>
+									<th>Desarrollador</th>
+									<th>Horas/día</th>
+									<th>Días/semana</th>
+									<th>Horas/semana</th>
+									<th>Total</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Ricardo E. Avendaño T.</td>
+									<td>7</td>
+									<td>7</td>
+									<td>7 &times; 7 &#61; 49</td>
+									<td>49&times;4&#61;196</td>
+								</tr>
+							</tbody>
+						</table>
+						<table style="font-size: 0.75em; border-bottom: 1px solid; width: 105%;">
+							<thead>
+								<tr>
+									<th>Horas/sprint</th>
+									<th>Costo/hora</th>
+									<th>Costo/sprint</th>
+									<th>Total</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>49</td>
+									<td>$3</td>
+									<td>49 &times; $3 &#61; $147</td>
+									<td>$147 &times; 4 &#61; $588</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+			</section>
+			<!-- /costos -->
+			<!-- beneficios -->
+			<section>
+				<section>
+					<h4 style="color: #ffaa00;">Beneficios</h4>
+				</section>
+
+				<section>
+					<h6>Retorno de la inversión</h6>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li style="margin-bottom: 2%;">Ahorro generado por ausencia de costos de mantenimiento.</li>
+						<li style="margin-bottom: 2%;">Institución mediana &#8594; plan estándar ($25).</li>
+						<li style="margin-bottom: 2%;">Técnico &#8594; $4/hora &#8594; 2 horas mantenimiento mensual.
+						</li>
+					</ul>
+
+					<table style="font-size: 0.5em;">
+						<thead>
+							<tr>
+								<th>Actividad</th>
+								<th>Horas</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Configuración de equipos</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>Configuración de software</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>Configuración de base de datos</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>Respaldo de configuraciones</td>
+								<td>0.5</td>
+							</tr>
+							<tr>
+								<td>Detectar y registrar caídas de servicio</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>Respaldos de datos</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>Configuración de red</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>Registro y control de equipos</td>
+								<td>0.5</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td style="border: 1px solid;">10</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<table style="font-size: 0.75em;">
+						<thead>
+							<tr>
+								<th style="border-right: 1px solid;">Costo técnico (USD/hora)</th>
+								<th>Horas otros sistemas</th>
+								<th style="border-right: 1px solid;">Costo (USD)</th>
+								<th>Horas de mantenimiento propuesta</th>
+								<th>Costo (USD)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style="border-right: 1px solid;">$4</td>
+								<td>10</td>
+								<td style="border-right: 1px solid;">$4 &times; 10 &#61; $40</td>
+								<td>2</td>
+								<td>$4 &times; 2 &#61; $8</td>
+							</tr>
+						</tbody>
+					</table>
+					<h6 style="margin-top: 5%;">Beneficio &#8594; $40 &minus; $8 &#61; $32</h6>
+				</section>
+
+				<section>
+					<table style="font-size: 0.75em;">
+						<thead>
+							<tr>
+								<th>Mes</th>
+								<th>Costo acumulado</th>
+								<th>Beneficios</th>
+								<th>Beneficio acumulado</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>0</td>
+								<td>25</td>
+								<td>0</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>50</td>
+								<td>32</td>
+								<td>32</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>75</td>
+								<td>32</td>
+								<td>64</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>100</td>
+								<td>32</td>
+								<td>96</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>125</td>
+								<td>32</td>
+								<td>128</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>150</td>
+								<td>32</td>
+								<td>160</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<div>
+						<img width="60%" src="img/b.png">
+						<div style="font-size: 0.4em; opacity: 0.5;">Imagen:
+							Elaboración del autor.</div>
+					</div>
+				</section>
+
+				<section>
+					<h6>Otros beneficios</h6>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li style="margin-bottom: 2%;">Automatización de procesos.</li>
+						<li style="margin-bottom: 2%;">Procesos explícitos.</li>
+						<li style="margin-bottom: 2%;">Tiempo de comunicación minimizado.</li>
+						<li style="margin-bottom: 2%;">Requisitos de sistema ligeros.</li>
+						<li style="margin-bottom: 2%;">Restricciones de acceso y autorización.</li>
+						<li style="margin-bottom: 2%;">Tiempo de capacitación reducido.</li>
+						<li style="margin-bottom: 2%;">Estructura migrable a otros entornos sin comprometer
+							funcionalidad.</li>
+					</ul>
+				</section>
+			</section>
+			<!-- /beneficios -->
+			<!-- /cap. IV -->
+
+			<!-- cap. V -->
+			<section>
+				<h1 style="color: #5ea555; font-size: 2.3em;">Conclusiones y recomendaciones</h1>
+			</section>
+			<!-- conclusiones -->
+			<section>
+				<section>
+					<h4 style="color: #5ea555;">Conclusiones</h4>
+				</section>
+				<section>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li style="margin-bottom: 2%;">Alternativa a instituciones que no cuentan con herramientas
+							adecuadas para implementar la educación a distancia en
+							sus operaciones.</li>
+						<li style="margin-bottom: 2%;">Recopilación de información.</li>
+						<li style="margin-bottom: 2%;">Análisis de sistemas actuales.</li>
+						<li style="margin-bottom: 2%;">Análisis de requerimientos.</li>
+						<li style="margin-bottom: 2%;">Diseño de propuesta.</li>
+						<li style="margin-bottom: 2%;">Mercado y soluciones similares.</li>
+						<li style="margin-bottom: 2%;">¿Reemplazar soluciones existentes?</li>
+					</ul>
+				</section>
+			</section>
+			<!-- /conclusiones -->
+			<!-- recomendaciones -->
+			<section>
+				<section>
+					<h4 style="color: #5ea555;">Recomendaciones</h4>
+				</section>
+
+				<section>
+					<h6>Gran potencial de mejora</h6>
+					<ul style="font-size: 0.75em; text-align: justify;">
+						<li style="margin-bottom: 2%;">Exámenes &plus; calificaciones.</li>
+						<li style="margin-bottom: 2%;">Importación masiva de datos.</li>
+						<li style="margin-bottom: 2%;">Aplicaciones móviles híbridas o nativas.</li>
+						<li style="margin-bottom: 2%;">AWS &#62; Heroku.</li>
+						<li style="margin-bottom: 2%;">Técnico, respaldos, mantenimiento.</li>
+					</ul>
+				</section>
+			</section>
+			<!-- /recomendaciones -->
+			<!-- /cap. V -->
+
+			<!-- end -->
+			<section data-background-image="img/end.png" data-background-opacity="0.045" data-background-size="cover">
+				<h5 style=" margin:5%;color: #a23; text-align: left;">Resumen</h5>
+				<ol style="columns: 2;margin:5%;font-size: 0.7em; text-align: left; display: block;">
+					<li>Portada <a href="#">&crarr;</a></li>
+					<li>Introducción <a href="#/1">&crarr;</a></li>
+					<li>Diagnóstico</li>
+					<ul>
+						<li>Planteamiento <a href="#/4">&crarr;</a></li>
+						<li>Situación actual <a href="#/5">&crarr;</a></li>
+					</ul>
+					<li>Requerimientos</li>
+					<ul>
+						<li>Análisis situacional <a href="#/7">&crarr;</a></li>
+						<li>Análisis documental <a href="#/8">&crarr;</a></li>
+					</ul>
+					<li>Diseño <a href="#/9">&crarr;</a></li>
+					<li>Análisis económico</li>
+					<ul>
+						<li>Estudio de mercado <a href="#/12">&crarr;</a></li>
+						<li>Inversión inicial <a href="#/13">&crarr;</a></li>
+						<li>Costo de desarrollo <a href="#/14">&crarr;</a></li>
+						<li>Beneficios<a href="#/15">&crarr;</a></li>
+					</ul>
+					<li>Conclusiones y recomendaciones</li>
+					<ul>
+						<li>Conclusiones <a href="#/17">&crarr;</a></li>
+						<li>Recomendaciones <a href="#/18">&crarr;</a></li>
+					</ul>
+					<li style=" list-style:circle; font-weight: bold; opacity: 0.75; transition: all .2s;"
+						onMouseOver="this.style.opacity=1" onMouseOut="this.style.opacity=0.75">Propuesta <a
+							style="font-size: 1.5em;" href="https://vast-meadow-14555.herokuapp.com"
+							target="_blank">&#x2197;</a>
+					</li>
+				</ol>
+			</section>
+			<!-- /end -->
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+	<script>
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+			transition: 'concave', // none/fade/slide/convex/concave/zoom
+		});
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+</body>
+
+</html>
